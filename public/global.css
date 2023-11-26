@@ -1,0 +1,81 @@
+:root {
+  --font: system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji;
+  --gutter: 1.5rem;
+  /* Site colors */
+  --color-body: #fafafa;
+  --color-text: #555;
+  --color-details: #7a7a7a;
+  --color-link: #222;
+  --color-link-hover: #000;
+  --color-link-border: rgba(0, 0, 0, 0.25);
+  --color-link-border-hover: rgba(0, 0, 0, 0.5);
+  --color-headings: #333;
+  --color-hr: rgba(0, 0, 0, .05);
+  /* Pokémon types */
+  --type-normal: #aa9;
+  --type-fire: #f42;
+  --type-water: #39f;
+  --type-electric: #fc3;
+  --type-grass: #7c5;
+  --type-ice: #6cf;
+  --type-fighting: #b54;
+  --type-poison: #a59;
+  --type-ground: #db5;
+  --type-flying: #89f;
+  --type-psychic: #f59;
+  --type-bug: #ab2;
+  --type-rock: #ba6;
+  --type-ghost: #66b;
+  --type-dragon: #76e;
+  --type-dark: #754;
+  --type-steel: #aab;
+  --type-fairy: #e9e;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --color-body: #282c34;
+    --color-text: #abb2bf;
+    --color-details: rgba(255, 255, 255, .5);
+    --color-link: rgba(255, 255, 255, .75);
+    --color-link-hover: #fff;
+    --color-link-border: rgba(255, 255, 255, .25);
+    --color-link-border-hover: rgba(255, 255, 255, .5);
+    --color-headings: #dee2e6;
+    --color-hr: rgba(255, 255, 255, .1);
+  }
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--font);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 2rem var(--gutter);
+  margin: 0;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-body);
+}
+
+a {
+  color: var(--color-link);
+  transition: all .2s ease-in-out;
+  text-decoration: underline;
+  text-decoration-color: var(--color-link-border);
+  text-decoration-skip-ink: auto;
+}
+
+a:hover,
+a:focus {
+  text-decoration-color: var(--color-link-border-hover);
+}

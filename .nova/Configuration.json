@@ -1,0 +1,13 @@
+{
+  "apexskier.eslint.config.eslintConfigPath" : ".eslintrc.json",
+  "apexskier.eslint.config.eslintRulesDirs" : [
+    "node_modules\/eslint\/lib\/rules"
+  ],
+  "apexskier.eslint.config.fixOnSave" : "Enable",
+  "cssvalidator.enabled" : false,
+  "prettier.format-on-save" : "Enable",
+  "todo.workspace-ignore-paths" : ",\/Volumes\/Macintosh HD\/Users\/arthr\/Sites\/pokedex\/public\/build",
+  "workspace.preview_append_paths" : false,
+  "workspace.preview_type" : "custom",
+  "workspace.preview_url" : "http:\/\/localhost:5000"
+}

@@ -1,0 +1,17 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nnpm install"
+    },
+    "clean" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nrm -rf package-lock.json node_modules"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\nnpm run dev"
+    }
+  },
+  "identifier" : "5C7B24DA-BA3C-4F6C-8B89-1195A566788A"
+}
